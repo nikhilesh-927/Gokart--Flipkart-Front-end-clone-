@@ -1,0 +1,539 @@
+/* 
+   =======================
+   RESET AND GLOBAL STYLES
+   =======================
+*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Arial, sans-serif;
+  }
+  
+  /*
+     =======================
+     HEADER STYLES
+     =======================
+  */
+  header {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+  }
+  
+  /*
+     =======================
+     NAVIGATION BAR STYLES
+     =======================
+  */
+  nav {
+    height: 100%;
+    background-color: rgb(40, 116, 240);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Main navigation container styles */
+  .navbar {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Logo styles within the navigation bar */
+  .navbar .logo {
+    width: 10%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  .navbar_items {
+    cursor: pointer;
+    height: 24px;
+  }
+  .navbar_items li {
+    padding-top: 5px;
+  }
+  .navbar_items li:hover {
+    background-color: #272626;
+    border-radius: 2px;
+    height: 30px;
+  }
+  .navbar_items img{
+    padding-right: 5px;
+    width: 16px;
+    height: 20px;
+  }
+  .logo img {
+    width: 80%;
+  }
+  .navbar_items li .column{
+    float: left;
+    width: 20%;
+  }
+  
+  /* Search bar styles within the navigation bar */
+  .searchbar {
+    width: 40%;
+    height: 70%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Search input placeholder text styles */
+  .searchbar input::placeholder {
+    font-size: 15px;
+  }
+  
+  /* Search input styles */
+  .searchbar input {
+    width: 85%;
+    height: 80%;
+    outline: 0;
+    border: none;
+  }
+  
+  /* Search icon styles */
+  .searchbar i {
+    color: #3692ff;
+  }
+  
+  /* Unordered list styles within the navigation bar */
+  .navbar ul {
+    width: 50%;
+    text-align: center;
+  }
+  
+  /* List item styles within the navigation bar */
+  .navbar ul li {
+    width: 25%;
+    list-style: none;
+    font-size: 15px;
+    float: left;
+    box-sizing: border-box;
+    color: white;
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: 600;
+  }
+  /*
+     =======================
+     LOGIN OVERLAY
+     =======================
+  */
+  .login_overlay {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: #ccccccc4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .login_box {
+    width: 650px;
+    height: 500px;
+    background-color: #fff;
+    display: flex;
+    /* box-sizing: border-box; */
+  }
+  .log_in_info {
+    width: 40%;
+    height: 100%;
+    padding: 7% 5%;
+    background-color: #2874f0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+  }
+  
+  .log_in_info h1 {
+    color: white;
+    /* align-items: center; */
+  }
+  .log_in_info h3 {
+    padding: 30px 0;
+    font-size: 20px;
+    color: rgb(219, 219, 219);
+    font-weight: 100;
+    /* align-items: center; */
+  }
+  .log_in_info img {
+    padding: 100px 0 0 0;
+    /* align-items: center; */
+  }
+  .log_in_section {
+    width: 60%;
+    height: 100%;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+  }
+  .log_in_section p {
+    padding: 30px 0;
+    font-size: 12px;
+  }
+  .log_in_section input {
+    border: none;
+    border-bottom: 1px solid black;
+  }
+  .log_in_section button {
+    padding: 10px 0;
+    border: none;
+    background-color: #fb641b;
+    color: white;
+  }
+  /*
+     =======================
+     SHORT SEARCHES SECTION STYLES
+     =======================
+  */
+  .shortsearch {
+    height: fit-content;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  
+  /* Unordered list styles in the short searches section */
+  .shortsearch ul {
+    width: 100%;
+    height: fit-content;
+    border-bottom: 1px solid rgb(179, 179, 179);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  
+  /* List item styles in the short searches section */
+  .shortsearch ul li {
+    cursor: pointer;
+    width: 10%;
+    font-size: 14px;
+    padding: 15px 0;
+    text-align: center;
+    font-weight: 600;
+    font-family: Roboto, Arial, sans-serif;
+    float: left;
+    list-style: none;
+    box-sizing: border-box;
+    color: black;
+  }
+  
+  .shortsearch ul li:hover {
+    border-radius: 2px;
+    background-color: rgb(40, 116, 240);
+  }
+  
+  /*
+     =======================
+     SECTION STYLES
+     =======================
+  */
+  section {
+    width: 100%;
+    height: 190vh;
+  }
+  
+  /* Left part of the section styles */
+  .part1 {
+    width: 42%;
+    padding: 20px;
+    height: 400px;
+    float: left;
+    box-sizing: border-box;
+  }
+  
+  /* Right part of the section styles */
+  .part2 {
+    width: 58%;
+    height: 400px;
+    padding: 20px;
+    box-sizing: border-box;
+    float: left;
+  }
+  
+  /* Heading styles */
+  .head {
+    font-size: 20px;
+    font-weight: 600;
+    color: #212121;
+  }
+  
+  /* Rating section styles */
+  .rating {
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Rating text styles */
+  .rating > p {
+    font-size: medium;
+    float: left;
+    font-size: 15px;
+    padding: 0 10px;
+    color: grey;
+  }
+  
+  /* Rating logo styles */
+  .rating_logo {
+    width: 45px;
+    height: 22px;
+    font-size: 20px;
+    background-color: #388e3c;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+  }
+  
+  /* Rating logo image styles */
+  .rating_logo img {
+    float: left;
+    width: 11px;
+    height: 11px;
+  }
+  
+  /* Additional rating information styles */
+  .rating_logo p {
+    float: left;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+  }
+  
+  /* Assured section styles */
+  .assured {
+    width: 80px;
+  }
+  
+  /* Offer amount styles */
+  .offer_amount {
+    color: green;
+    padding: 5px 0;
+    font-size: 15px;
+  }
+  
+  /* Price tags styles */
+  .price_tags {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Primary price tag styles */
+  .price_tag1 {
+    font-size: 40px;
+    float: left;
+  }
+  
+  /* Secondary price tag (strike-through) styles */
+  .price_tag2 {
+    font-size: 20px;
+    padding: 0 15px;
+    text-decoration: line-through;
+    color: grey;
+    float: left;
+  }
+  
+  /* Offer percent styles */
+  .offer_percent {
+    font-size: 20px;
+    color: green;
+  }
+  
+  /*
+     =======================
+     OFFERS SECTION STYLES
+     =======================
+  */
+  .offers {
+    padding: 10px 0;
+  }
+  
+  /* Offer section heading styles */
+  .offers h2 {
+    font-size: 18px;
+    padding: 10px 0;
+  }
+  
+  /* Individual offer line styles */
+  .offer_line {
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Offer icon styles */
+  .offer_line i {
+    width: 15px;
+    float: left;
+    color: #388e3c;
+  }
+  
+  /* Offer text styles */
+  .offer_line p {
+    padding: 0 10px 0 20px;
+    font-size: 15px;
+    float: left;
+  }
+  
+  /* Offer link styles */
+  .offer_line a {
+    font-size: 15px;
+  }
+  
+  /* 'More offers' link styles */
+  .more_offers {
+    font-size: 15px;
+    color: #3692ff;
+  }
+  
+  /*
+     =======================
+     EXCHANGE SECTION STYLES
+     =======================
+  */
+  .exchange {
+    width: 60%;
+    border: 1px solid rgb(174, 174, 174);
+  }
+  
+  /* Individual exchange item styles */
+  .exchange_item {
+    padding: 17px;
+  }
+  
+  /* Label styles within exchange items */
+  .exchange_item label {
+    font-size: 15px;
+  }
+  
+  /* Exchange item name styles */
+  .exchange_name {
+    padding: 0 10px;
+    font-size: 15px;
+  }
+  
+  /* Exchange item amount styles */
+  .exchange_amount {
+    float: right;
+    font-weight: 500;
+  }
+  
+  /*
+     =======================
+     SPONSOR SECTION STYLES
+     =======================
+  */
+  .sponsor {
+    width: 100%;
+    height: 100px;
+    padding: 50px 0;
+  }
+  
+  /* Sponsor logo styles */
+  .sponsor_logo {
+    width: 20%;
+    height: 50px;
+    float: left;
+  }
+  
+  /* Sponsor logo image styles */
+  .sponsor_logo img {
+    width: 80px;
+    padding: 5px;
+    border: 1px solid rgb(166, 166, 166);
+  }
+  
+  /* Sponsor text styles */
+  .sponsor_text {
+    width: 80%;
+    float: left;
+    font-size: 15px;
+  }
+  
+  /* Sponsor text paragraph styles */
+  .sponsor_text p {
+    line-height: 25px;
+  }
+  
+  /* Sponsor text link styles */
+  .sponsor_text p a {
+    padding: 0 3px;
+    color: #3692ff;
+    text-decoration: none;
+  }
+  
+  /* Choose color and storgae varient of the product */
+  .specifications .color {
+    float: left;
+    width: 25%;
+    color: rgb(85, 92, 100);
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .specifications .color .color_item {
+    color: #000000;
+    font-size: 13px;
+  }
+  
+  
+  /* product highlights */
+  .highlights {
+    height: 100px;
+  }
+  
+  .highlights_item {
+    font-weight: bold;
+    color: rgb(85, 92, 100);;
+    padding-top: 10px;
+    float: left;
+    width: 20%;
+  }
+  
+  .highlights_item li{
+    color: #000000;
+    font-size: 13px;
+  }
+  
+  
+  /*
+     =========================================
+     PART - 1 , Product Image and more stuffs
+     =========================================
+  */
+  /* product images */
+  
+  .part1 .part1style {
+    float: left;
+    width: 60%;
+  }
+  
+  
+  /*Add to cart and Buy Now */
+  .button_cart {
+    float: left;
+    width: 50%;
+  }
+  
+  .button_cart button {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff6a1;
+    border-radius: 5px;
+    background-color: rgb(255, 102, 0);
+    height: 54px;
+    width: 120px;
+  }
+  
+  
