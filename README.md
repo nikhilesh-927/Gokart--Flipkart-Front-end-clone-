@@ -1,6 +1,10 @@
 # Gokart--Flipkart-Front-end-clone-
 The front-end clone of Flipkart shopping website. In this project Flipkart's front-end of product page is cloned using html, css and some javascript code.
 
+# Checkout 
+Checkout this project through this link : 
+https://magicalmovies.freewebhostmost.com/
+
 # Features
 
 - Search bar.
